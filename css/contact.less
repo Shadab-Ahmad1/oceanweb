@@ -1,0 +1,432 @@
+/*-- -------------------------- -->
+<---           Form             -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+
+    #form {
+        padding: 50/16em 0;
+        margin: auto;
+        position: relative;
+        padding-bottom: 36%;
+
+        .top-wave {
+            position: absolute;
+            width: 100%;
+            top: -2/16em;
+            height: auto;
+            left: 0;
+        }
+
+
+        .title {
+            font-weight: 900;
+            font-size:~"min(9vw, 2.4em)";
+            line-height: 58/48;
+            color: #1A1A1A;
+            position: relative;
+            margin-bottom: 42/48em;
+            text-align: left;
+        }
+
+        p {
+            line-height: 27/18;
+            max-width: 500/18em;
+            color: #595959;
+            margin-bottom: 48/18em;
+        }
+
+        .left-section {
+            width: 96%;
+            margin: auto;
+            margin-top: 15%;
+            max-width: 600/16em;
+
+            h2 {
+                font-size: 32/16em;
+                margin-bottom: 12/16em;
+            }
+        }
+
+        #contact {
+            margin: auto;
+            margin-bottom: 100/16em;
+            .input-group {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 30/16em;
+
+                label {
+                    font-weight: bold;
+                    font-size: 16/16em;
+                    margin-bottom: 6/16em;
+                }
+
+                input[type="text"], 
+                input[type="email"], 
+                input[type="tel"], 
+                input[type="url"], 
+                textarea {
+                    font-size: 16/16em;
+                    height: 67/16em;
+                    border: none;
+                    border-bottom: 1/16em solid #d4d4d4;
+                    background: transparent;
+                }
+
+                input:focus {
+                    border: 1/16em solid var(--primary);
+                }
+
+                textarea {
+                    min-height: 200/16em;
+                    padding-top: 20/16em;
+                }
+
+                ::placeholder {
+                    color: #d4d4d4;
+                    font-family: "Roboto", sans-serif;
+                }
+            }
+
+            .button-solid {
+                border: none;
+            }
+        }
+
+        .contact-right {
+            background: var(--primary);
+            padding: 45/16em 34/16em;
+            width: 100%;
+            max-width: 300/16em;
+            margin: auto;
+            border-radius: 5/16em;
+
+            .heading {
+                color: var(--primaryShade);
+                font-size: 24/16em;
+                line-height: 1.2em;
+                font-weight: bold;
+                padding-left: 20/24em;
+                border-left: 5/24em solid var(--primaryShade);
+                display: block;
+                margin-bottom: 20/24em;
+            }
+
+            .info-group {
+                margin-bottom: 36/16em;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+
+            .info {
+                font-size: 16/16em;
+                line-height: 28/16;
+                color: #fff;
+                opacity: .9;
+                text-decoration: none;
+                display: block;
+            }
+        }
+    }
+}
+
+/* Mobile Landscape */
+@media only screen and (min-width: 568px) {
+
+    #form {
+        #contact {
+            max-width: 700/16em;
+        }
+        .contact-right {
+            max-width: 700/16em;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .info-group {
+                width: 40%;
+                margin-left: 50/16em;
+                &:nth-of-type(3) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+
+    #form {
+        #contact {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .input-group {
+                width: 48%;
+                margin-bottom: 50/16em;
+                position: relative;
+
+                &:nth-of-type(5) {
+                    width: 100%;
+                }
+
+                &:last-of-type {
+                    width: 100%;
+                }
+
+                &:hover {
+                    .hover-box {
+                        height: 67/16em;
+                        border: 1/16em solid var(--primary);
+                        pointer-events: none;
+                    }
+
+                    input[type="text"], 
+                    input[type="email"], 
+                    input[type="tel"], 
+                    input[type="url"], 
+                    textarea {
+                        padding-left: 20/16em;
+                    }
+                }
+
+                input[type="text"], 
+                input[type="email"], 
+                input[type="tel"], 
+                input[type="url"], 
+                textarea {
+                    border-bottom: none;
+                    position: relative;
+                    transition: padding .3s;
+                    background: transparent;
+                }
+
+                .hover-box {
+                    position: absolute;
+                    display: block;
+                    height: 1/16em;
+                    width: 100%;
+                    background: transparent;
+                    border: 1/16em solid #e9e8e8;
+                    opacity: 1;
+                    bottom: -1/16em;
+                    left: 0;
+                    z-index: 10;
+                    transition: height .3s, border .3s;
+                    z-index: -1;
+                }
+            }
+
+            .textarea {
+                &:hover {
+                    .hover-box {
+                        height: 168/16em;
+                    }
+                }
+            }
+            
+            .form-submit {
+                margin-left: auto;
+            }
+
+        }
+    }
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+
+    #form {
+        display: flex;
+        justify-content: center;
+        align-content: flex-start;
+        font-size: 1.5vw;
+        width: 100%;
+        padding: 150/16em 0;
+
+        .left-section {
+            width: 750/16em;
+            margin: 0;
+            margin-left: 0;
+            margin-right: 75/16em;
+        }
+
+        #contact {
+            margin: 0;
+            margin-right: 0;
+            max-width: none;
+        }
+
+        .contact-right {
+            flex-direction: column;
+            max-width: 300/16em;
+            margin: 0;
+            height: 554/16em;
+
+            .info-group {
+                margin-left: 0;
+                width: 100%;
+
+                &:nth-of-type(3), &:last-of-type {
+                    margin-bottom: 36/16em;
+                }
+            }
+        }
+    }
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+
+    #form {
+        font-size: inherit;
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0px) {
+    body.dark-mode {
+        #form {
+            .title {
+                color: #fff;
+            }
+
+            p {
+                color: #fff;
+            }
+
+            .input-group {
+                label {
+                    color: #fff;
+                }
+
+                input, textarea {
+                    color: #fff;
+                }
+            }
+
+            .contact-right {
+                background: var(--medium);
+            }
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---   Contact Page Header     -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+
+    #int-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
+        min-height: 30vh;
+        padding-top: 50/16em;
+
+        &:before {
+            content: '';
+            position: absolute;
+            display: block;
+            height: 100%;
+            width: 100%;
+            background: #000;
+            opacity: .50;
+            top: 0;
+            left: 0;
+            z-index: -1;
+          }
+
+          picture {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -2;
+
+            img {
+                object-position: 45% 70%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 84/30em;
+            text-align: center;
+            margin: 0 auto;
+            position: relative;
+            width: 96%;
+            max-width: 500/64em;
+            margin-top: 64/64em;
+            margin-bottom: 30/64em;
+        }
+
+        p {
+            color: #fff;
+            text-align: center;
+            max-width: 400/18em;
+            margin: auto;
+            margin-bottom: 30/18em;
+            display: block;
+            width: 96%;
+        }
+    }
+    
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+
+    #int-hero {
+        font-size: 16px;
+
+        h1 {
+            font-size: 64/16em;
+        }
+    }
+
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+
+    #int-hero {
+        min-height: 300/16em;
+        height: auto;
+        padding-top: 180/16em;
+        padding-block-end: 100/16em;
+        background-attachment: fixed;
+        font-size: inherit;
+
+        h1 {
+            color: #fff;
+            font-size: 120/30em;
+            text-align: center;
+            margin: 0 auto;
+            position: relative;
+            width: 96%;
+            max-width: 500/64em;
+            margin-top: 24/64em;
+            margin-bottom: 30/64em;
+        }
+    }
+}

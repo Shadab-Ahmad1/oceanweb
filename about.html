@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Swap our for actual link-->
+    <link rel="canonical" href="https://wwww.oceansideweb.design/about.html">
+
+    <meta name="description" content="Learn about Oceanside Web Design, your go-to expert for website design, development, SEO optimization, and branding in Broward County, Florida. Discover our mission, values, and commitment to delivering top-notch online solutions.">
+    <meta name="keywords" content="About Oceanside Web Design, website design, web development, SEO optimization, branding, Broward County, Florida, mission, values, online solutions">
+
+
+    <!--Social Media Display-->
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website" >
+    <meta property="og:url" content="">
+    <meta property="og:image" content="/images/social.jpg">
+    <meta property="og:image:secure_url" content="/images/social.jpg">
+
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png?v1">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Preload -->
+    <link rel="preload" as="image" href="./images/cabinets2-m.jpg">
+    <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-regular.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-700.woff2" crossorigin>
+
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/dark.css">
+
+    <!--Put analytics tag here at the bottom to prevent it from render blocking-->
+
+    <title> About | Oceanside Web Design | Website Development | Broward County, Florida</title>
+</head>
+<body>
+    <!--Screen reader skip main nav-->
+    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <div id="navigation">
+        <div aria-hidden="true" class="background-color-div">
+            <!--This div is used to overcome a z-index issue where the open
+                #navbar-menu is on top of the #navigation. This bar places itself 
+                the #navbar-menu so that menu appears behind the #navigation
+            -->
+        </div>
+        <div class="container">
+            <!--Logo - Get SVGs if you can.  I use fiverr to get png's turned into SVGs. Highly recommend it, worth the $20 - get a light and dark version-->
+            <a class="logo" aria-label="click to go to home page" href="index.html">
+                <!--Light Colored Logo, remove .dark image tag and the .light class if you don't have a dark and light version -->
+                <img class="light" aria-hidden="true" src="./images/logo.png" decoding="async" alt="logo" width="221" height="226">
+
+                <!--Dark Colored Logo-->
+                <img class="dark" aria-hidden="true" src="./images/logo.png" decoding="async" loading="lazy" alt="logo" width="221" height="66">
+            </a>
+
+            <!--Main Nav-->
+            <nav id="navbar-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="about.html">About Us</a></li>
+                    <li><a href="about.html#portfolio">Projects</a></li>
+                    <li><a href="index.html#service">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+           
+
+            <!--Mobile Nav toggle-->
+            <button aria-label="hamburger menu" class="hamburger-menu">
+                <span aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+
+    <main id="main">
+
+        <!-- ============================================ -->
+        <!--                    LANDING                   -->
+        <!-- ============================================ -->
+    
+        <section id="int-hero">
+            <h1 id="home-h">About Us</h1>
+            <picture>
+                <source media="(max-width: 600px)" srcset="./images/about-m.png">
+                <source media="(min-width: 601px)" srcset="./images/about.png">
+                <img aria-hidden="true" decoding="async" src="./images/about.webp" alt="about" width="400" height="662">
+            </picture>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                   About                      -->
+        <!-- ============================================ -->
+
+        <section id="sidebyside" class="sidebyside">
+            <div class="container">
+                <div class="content">
+                    <h2 class="title">Empowering Small Buinesses for Digital Triumph</h2>
+                     <p>
+                        At Oceanside Web Design, we're dedicated to crafting exceptional online experiences that leave a lasting impression. Our mission is simple: to help businesses like yours thrive in the digital world.
+                        <br><br>
+                        With a focus on creativity, innovation, and attention to detail, we go above and beyond to exceed your expectations. From stunning web designs to seamless development and strategic SEO, we offer a comprehensive suite of services tailored to your unique needs.
+                     </p>
+                     <p>
+                        Our team of experts combines cutting-edge technology with strategic thinking to deliver results that drive growth and success. Whether you're a small startup or a large corporation, we're here to help you stand out in the crowded online landscape.
+                        <br><br>
+                        At Oceanside Web Design, we're more than just a web agency – we're your partner in success. Let's work together to elevate your online presence and turn your digital vision into reality.
+                     </p>
+                     <a class="button-solid" href="contact.html">Get Free Quote</a>
+                </div>
+                <picture class="image-box">
+                     <source media="(max-width: 600px)" srcset="./images/about2-m.png">
+                     <source media="(min-width: 601px)" srcset="./images/about2.png">
+                     <img aria-hidden="true" loading="lazy" decoding="async" src="./images/about2.webp" alt="devices" width="400" height="662">
+                 </picture>
+            </div>
+       </section>
+
+       <!-- ============================================ -->
+<!--               Our Expertise                  -->
+<!-- ============================================ -->
+<section id="portfolio" class="portfolio">
+    <h1 style="text-align: center;">Our Portfolio</h1>
+    <div class="card-container">
+    <div class="card">
+        <picture class="mccracken">
+            <img aria-hidden="true" decoding="async" src="./images/mccracken.png" alt="mccracken painting" width="48" height="48">
+        </picture>
+        <h2 class="mccracken-heading">McCracken Painting</h2>
+        <p>
+            McCracken Painting is a premier painting company located in Lafayette, IN, USA. With a commitment to excellence and customer satisfaction, they provide top-quality painting services for residential and commercial properties.
+        </p>
+        <a href="https://mccrackenpainting.com" target="_blank" class="button-solid">Visit McCracken</a>
+    </div>
+    <div class="card">
+        <picture class="lhi">
+            <img aria-hidden="true" decoding="async" src="./images/lhi.png" alt="life hack innovations" width="48" height="48">
+        </picture>
+        <h2>Life Hack Innovations</h2>
+        <p>
+            Life Hack Innovations is a forward-thinking technology company dedicated to creating innovative and user-centric mobile and web solutions. Specializing in app development, custom software solutions, and digital transformation.
+        </p>
+        <a href="https://lifehackinnovationsllc.github.io/lhi-website/" target="_blank" class="button-solid">Visit LHI</a>
+    </div>
+    <div class="card">
+        <picture class="yed">
+            <img aria-hidden="true" decoding="async" src="./images/yed-logo.png" alt="yachting everyday" width="68" height="68">
+        </picture>
+        <h2>Yachting Every Day</h2>
+        <p>   
+            Yachting Everyday offers unforgettable experiences on the waters around the Greater Fort Lauderdale area, perfect for any celebration. They provide a custom 30' 2020 Sea Chaser Center Console, ideal for spending a full day or just a few hours of fun.
+        </p>
+        <a href="https://yachtingeveryday.com/" target="_blank" class="button-solid">Visit Yachting</a>
+    </div>
+    </div>
+</section>
+
+
+               <!-- ============================================ -->
+        <!--             Final Call to Action             -->
+        <!-- ============================================ -->
+
+        <section id="cta">
+            <div class="container">
+                <h2 class="title">
+                    Ready to shine online? <br> Let's make it happen together!
+                </h2>
+                <p>
+                    Get in touch with us today and kickstart your journey towards a stunning website that drives results.
+                </p>
+                <a href="contact.html" class="button-solid">Get an Estimate Now</a>
+            </div>
+            <picture>
+                <source media="(max-width: 600px)" srcset="./images/cta-m.png">
+                <source media="(min-width: 601px)" srcset="./images/cta.png">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="./images/cta.webp" alt="cta" width="1920" height="1280">
+             </picture>
+        </section>
+    </main>
+
+    <!-- ============================================ -->
+    <!--                     FOOTER                   -->
+    <!-- ============================================ -->
+
+    <footer id="footer">
+        <div class="container">
+            <div class="left-section">
+                <a class="logo" href="index.html"><img loading="lazy" decoding="async" src="./images/logo.png" alt="logo" width="264" height="78"></a>
+            </div>
+            <div class="right-section">
+                <div class="lists">
+                    <ul>
+                        <li><h2>Information</h2></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html#portfolio">Projects</a></li>
+                        <li><a href="index.html#service">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <ul>
+                        <li><h2>Services</h2></li>
+                        <li>Website Design</li>
+                        <li>Website Maintenance</li>
+                        <li>Hosting</li>
+                        <li>SEO Services</li>
+                    </ul>
+                    <ul>
+                        <li><h2>Contact</h2></li>
+                        <li><a href="tel:555-779-4407">T: (219) 921-3423</a></li>
+                        <li><a href="mailto:someson1569@gmail.com">someson1569@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="credit">
+            <span>Designed and Hand Coded by</span>
+            <a href="" target="_blank" rel="noopener">Oceanside Web Design</a>
+            <span class="copyright"> Copyright 2024 - Present</span></div>
+    </footer>
+
+    <script defer src="./nav.js"></script>
+    <!--
+        This script adds a class to the body after scrolling 100px
+        and we used these body.scroll styles to create some on scroll 
+        animations with the navbar
+    -->
+    <script>
+        document.addEventListener('scroll', (e) => { 
+            const scroll = document.documentElement.scrollTop;
+            if(scroll >= 100){
+        document.querySelector('body').classList.add('scroll')
+            } else {
+            document.querySelector('body').classList.remove('scroll')
+            }
+        });
+    </script>
+
+</body>
+</html>
